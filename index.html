@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/script.js"></script>
+    <title>BANK-ACCOUNT</title>
+</head>
+
+<body>
+    <div class="first">
+
+    </div>
+    <div class="container">
+        <h1>BANK-ACCOUNT</h1>
+        <h1 class="header">WELCOME TO ACEDU CREDIT UNION!</h1><br>
+        <hr>
+        <marquee behavior="scroll" direction="left" scrollamount="12">
+            <p id="warn">INSUFFICIENT FUNDS!!</p>
+            <p id="warn2">INITIAL DEPOSIT CANNOT BE LESS THAN $1000!</p>
+        </marquee>
+        <div class="radio">
+            <label for="">New Customer</label>
+            <input type="radio" name="accountType" value="new" checked>
+            <label for="">Existing Account</label>
+            <input type="radio" name="accountType" value="current">
+        </div>
+
+
+        <!-- </div>
+            <div class="col-md-6 col-lg-6 col-sm-6">
+                <h2>Deposit or withdraw funds:</h2>
+                <label for="Deposit-amount"></label>
+                <input type="number" class="form-control" id="Deposit-amount">
+                <label for="withdraw-amount"></label>
+                <input type="number" class="form-control" id="withdraw-amount">
+            </div> -->
+
+        <div class="row">
+            <div id="new" class="col-md-4">
+                <form class="newForm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Register A New Account</h2>
+                            <div class="form-group row">
+                                <label for="inputName" class="col-sm-7 col-form-label"> <b> Account
+                                        Name: </b></label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="inputName" required>
+                                </div>
+                            </div><br>
+                            <div class="form-group row">
+                                <label for="initialDeposit" class="col-sm-7 col-form-label" id="init"> <b>Initial
+                                        Deposit: </b></label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="initialDeposit">
+                                </div>
+                            </div><br>
+                            <button class="btn btn-outline-danger" type="submit" name="button">Create
+                                Account</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="new" class="col-md-4">
+                <form class="transactionForm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Deposit/Withdrawal</h2>
+                            <div class="form-group row">
+                                <label for="newDeposit" class="col-sm-7 col-form-label"> <b> Amount To
+                                        Deposit: </b></label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="newDeposit">
+                                </div>
+                            </div><br>
+                            <div class="form-group row">
+                                <label for="newWithdraw" class="col-sm-7 col-form-label" id="init"> <b> Amount to
+                                        Withdraw: </b></label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="newWithdraw">
+                                </div>
+                            </div><br>
+                            <button class="btn btn-outline-warning" type="submit" name="button">Process
+                                Transaction</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="new" class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Transaction History</h2>
+                        <div id="balanceDisp" class="well">
+
+                            <p class="me"><b> Name: <span id="accName"></span></p>
+                            <p class="me"><b> Account Number: <span id="accNum"></span></p>
+                            <p class="me"><b> Current Balance: <span id="curBal"></span></p>
+                            <p class="me"><b> Account History: <span id="accHistory"></span></p>
+                            <div class="btn btn-outline-success" id="buttons">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bankDiv transactionForm col-sm-3 ">
+                <select id="accSelect" name="">
+                </select>
+                <div id="showInfo">
+                    <p class="me">Account-Name: <span></span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

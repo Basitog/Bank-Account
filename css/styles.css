@@ -1,0 +1,82 @@
+.header {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    /* width: 400px; */
+    height: 460px;
+    box-shadow:  5px 7px 3px black;
+}
+
+h2{
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+#current {
+    display: none;
+}
+
+#balanceDisp {
+    display: none;
+}
+
+.negative {
+    color: red;
+}
+
+#warn {
+    background-color: red;
+    width: 250px;
+    display: none;
+    font-weight: bold;
+}
+
+body {
+    /* background-color: rgb(165, 0, 0); */
+    /* background-image: url(../img/bank.jpg); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 5px;
+}
+
+#warn2 {
+    background-color: red;
+    width: 390px;
+    display: none;
+    font-weight: bold;
+}
+#initialDeposit{
+    width: 100px;
+} 
+
+#inputName{
+    width: 130px;
+} 
+
+#newWithdraw{
+    width: 100px;
+} 
+
+#newDeposit{
+    width: 100px;
+} 
+
+label{
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+.first{
+    /* background-image: url(../img/bank1.avif);
+    background-size: 100px; */
+}
+
+p{
+    color: #ccc;
+    margin: 20px 10px;
+    font-family: 'Fira Code', monospace;
+}
